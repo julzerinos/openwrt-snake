@@ -10,7 +10,7 @@ uci commit
 
 printf "Downloading packages from host..."
 wget http://10.0.2.2:8000/kmod-drv-mpc8xxx_4.14.171-1_aarch64_generic.ipk
-opkg install kmod-drv-mpc8xxx_4.14.171-1_aarch64_generic.ipk 
+opkg install kmod-drv-mpc8xxx_4.14.171-1_aarch64_generic.ipk
 
 printf "Installing OPKG packages...\n"
 
@@ -43,7 +43,7 @@ modprobe gpio-mpc8xxx
 
 printf "Cloning Snake game...\n"
 
-git clone --single-branch --branch just-snake-openwrt https://github.com/julzerinos/buildroot-snake.git
+git clone --single-branch --branch just-snake https://github.com/julzerinos/openwrt-snake.git
 
 printf "Setup complete, run the Snake game with\n"
 printf "   $ python3 buildroot-snake/snake.py\n"
